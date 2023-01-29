@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Pochita/static/css/main.049deac0.css",
+    "main.js": "/Pochita/static/js/main.d6d33cf6.js",
+    "static/media/PochitaFinal.gltf": "/Pochita/static/media/PochitaFinal.e664817e0c669027930b.gltf",
+    "index.html": "/Pochita/index.html",
+    "main.049deac0.css.map": "/Pochita/static/css/main.049deac0.css.map",
+    "main.d6d33cf6.js.map": "/Pochita/static/js/main.d6d33cf6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.049deac0.css",
+    "static/js/main.d6d33cf6.js"
+  ]
+}
