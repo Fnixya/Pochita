@@ -10,14 +10,17 @@ import Pochita from './components/three/Pochita';
 
 const router = createHashRouter([
   {
-    path: "/Pochita",
+    path: "/Pochita/",
     element: <Pochita />,
     // errorElement: 
     // loader: rootLoader, // pantalla de carga
-  }, 
-  {
-    path: "/bocchi",
-    element: <Bocchi />    
+    
+    children: [       
+      {
+        path: "bocchi",
+        element: <Bocchi />    
+      },
+    ]
   },
 ]);
 
