@@ -12,7 +12,7 @@ const router = createBrowserRouter([
   {
     path: process.env.PUBLIC_URL + '/' ,
     element: <Pochita />,
-    // errorElement: 
+    errorElement: <Pochita />,
     // loader: rootLoader, // pantalla de carga
     
     children: [       
