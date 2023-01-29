@@ -10,7 +10,7 @@ import Pochita from './components/three/Pochita';
 
 const router = createBrowserRouter([
   {
-    path: process.env.PUBLIC_URL ,
+    path: process.env.PUBLIC_URL + '/' ,
     element: <Pochita />,
     // errorElement: 
     // loader: rootLoader, // pantalla de carga
