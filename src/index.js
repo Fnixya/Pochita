@@ -10,7 +10,7 @@ import Pochita from './components/three/Pochita';
 
 const router = createHashRouter([
   {
-    path: "/Pochita",
+    path: "/fnixya.github.io/Pochita/",
     element: <Pochita />,
     // errorElement: 
     // loader: rootLoader, // pantalla de carga
