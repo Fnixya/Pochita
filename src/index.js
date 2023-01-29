@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // import './tailwindcss.css';    //tailwindcss
 import './index.css';
@@ -8,9 +8,9 @@ import './index.css';
 import Bocchi from './components/three/Bocchi';
 import Pochita from './components/three/Pochita';
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
-    path: "/",
+    path: process.env.PUBLIC_URL ,
     element: <Pochita />,
     // errorElement: 
     // loader: rootLoader, // pantalla de carga
@@ -31,3 +31,5 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <RouterProvider router={router} />
 );
+
+console.log(process.env.PUBLIC_URL);
