@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 
 // import './tailwindcss.css';    //tailwindcss
 import './index.css';
@@ -8,7 +8,7 @@ import './index.css';
 import Bocchi from './components/three/Bocchi';
 import Pochita from './components/three/Pochita';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/Pochita",
     element: <Pochita />,
