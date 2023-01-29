@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.article{
+  @apply bg-slate-700 my-4 grid gap-5 p-5;
+
+  @apply lg:grid-cols-2 lg:w-[720px];
+  @apply min-[1400px]:grid-cols-3 min-[1400px]:w-[1280px];
+}
+
+.card{
+  @apply rounded-md p-4 text-white;
+}
+
+.btn {
+  @apply font-bold pb-1 px-2 rounded;
+}
+
+.btn-pink{
+  @apply bg-pink-600 text-white;
+}
+
+.btn-pink:hover{
+  @apply bg-pink-700;
+}
+
+/*Table.js component*/
+.manga-table-wrapper{
+  @apply p-2 rounded-md bg-white overflow-hidden;
+}
+
+.manga-table{
+  @apply border-separate border-spacing-0 border border-fuchsia-600 text-sm text-black;
+  @apply overflow-auto w-[100%];
+  @apply grid;
+
+  grid-template-columns:
+    minmax(150px, 3fr)
+    minmax(50px, 1fr)
+    minmax(50px, 1fr)
+    minmax(50px, 1fr)
+    minmax(50px, 1fr)
+    minmax(50px, 1fr);
+}
+
+.manga-table thead, .manga-table tbody, .manga-table tr{
+  @apply contents;
+}
+
+.manga-table thead tr th{
+  @apply relative;
+}
+
+.manga-table tbody tr td{
+  @apply border-t border-t-fuchsia-800 p-1;
+}
+
+.manga-table th span,
+.manga-table td span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+/**/
+input{
+  @apply text-black;
+}
+
+a:hover{
+  @apply text-green-900;
+}
