@@ -1,4 +1,9 @@
 # IDK WHAT I'M DOING
+
+Supuestamente esto renderizaba un modelo de pochita 3D y nada más. Intenté hacer deploy y fracasé.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
